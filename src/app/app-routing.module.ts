@@ -31,6 +31,22 @@ const routes: Routes = [
     path: 'ingresar-codigo-confirmacion',
     loadChildren: () => import('./ingresar-codigo-confirmacion/ingresar-codigo-confirmacion.module').then( m => m.IngresarCodigoConfirmacionPageModule)
   },
+  {
+    path: 'inicio-alumno',
+    loadChildren: () => import('./inicio-alumno/inicio-alumno.module').then( m => m.InicioAlumnoPageModule)
+  },
+  {
+    path: 'seleccionar-cuenta',
+    loadChildren: () => import('./seleccionar-cuenta/seleccionar-cuenta.module').then( m => m.SeleccionarCuentaPageModule)
+  },
+  {
+    path: 'registrar-pago',
+    loadChildren: () => import('./registrar-pago/registrar-pago.module').then( m => m.RegistrarPagoPageModule)
+  },
+  {
+    path: 'agregar-transferencia',
+    loadChildren: () => import('./agregar-transferencia/agregar-transferencia.module').then( m => m.AgregarTransferenciaPageModule)
+  },
 ];
 
 @NgModule({

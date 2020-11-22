@@ -1,0 +1,136 @@
+<ion-content >
+<ion-header style='background-color: #3e4f85;' class='text-light'>
+  <ion-grid>
+    <ion-row>
+      <ion-col  size='2' >
+        <img src="../../assets/Logo-Colegios/sigloXXI-logo.png" height="20" alt="Logo">
+      </ion-col>
+      <ion-col>
+        <ion-title class="mt-1" style="font-size: small; color: rgb(163, 157, 157) !important; " >Unidad Educativa Colegio Siglo XXI</ion-title>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+<ion-header style='background-color: #3f51b5;' class="text-light " >
+  <ion-grid>
+    <ion-row class='mb-0' >
+      <ion-col  >
+        <ion-title>
+            Representante
+        </ion-title>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="pl-4 pb-0 " >
+        <p class="mb-0" >
+          Josefina del Valle Lugo 
+        </p>
+        <p class='mt-0 mb-0 ' >
+          V-10278109  
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="text-center pt-0 " >
+        <img src="../../assets/reloj.png" width="100" height="80" class="rounded-circle" alt="reloj">
+        <p class='pl-5 pr-5 mb-0 ' >
+          Estado de inscripción de alummnos para el periodo 2020-2021
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+<!---Cuerpo del inicio-->
+  <ion-list>
+    <ion-item class='w-100' style='color: #3f51b5 !important ; ' >
+          <ion-grid>
+            <ion-row>
+              <ion-col size='6' >
+                <ion-label  style="font-size: 10px !important ;" >
+                  <b>
+                    Luis Carlos Sulbaran Lugo
+                  </b>
+                </ion-label>
+                <ion-label style="font-size: 10px !important ;">
+                  <b>
+                    Cedula: V-27219726
+                  </b>
+                </ion-label>
+                <ion-label style="font-size: 10px !important ;" >
+                  <b>
+                    Estado: Cuota(s) vencida(s)
+                  </b>
+                </ion-label>
+              </ion-col>
+              <ion-col size='4' >
+                <ion-label style="font-size: 9px !important ;" >
+                  <b>
+                    Grado: 6to periodo
+                  </b>
+                </ion-label>
+                <ion-label style="font-size: 9px !important ;" >
+                  <b>
+                    Concepto: Octubre
+                  </b>
+                </ion-label>
+                <ion-label style="font-size: 9px !important ;" >
+                  <b>
+                    Monto: 1690000.00
+                  </b>
+                </ion-label>
+              </ion-col>
+              <ion-col size='1' >
+                <button class="btn rounded-circle" style='color: #3f51b5 !important;' >
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>
+              </ion-col>
+              <ion-col size='1' >
+                <button class="btn rounded-circle" style='color: #3f51b5 !important;' >
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-credit-card" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                    <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                  </svg>
+                </button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+    </ion-item>
+    <!-- Facturas? -->
+    <ion-item *ngFor="let item of datosDePrueba"   >
+      <ion-grid>
+        <ion-row>
+          <ion-col size='6' >
+            <ion-label style="font-size:small !important; color: rgb(163, 157, 157) !important; " >
+              Nro control: {{item.nroControl}}
+            </ion-label>
+            <ion-label style="font-size:small !important; color: rgb(163, 157, 157) !important; " >
+              Conceptp : {{item.concepto}}
+            </ion-label>
+            <ion-label style="font-size:small !important; color: rgb(163, 157, 157) !important; " >
+              Monto : {{item.monto}}
+            </ion-label>
+          </ion-col>
+          <ion-col size='5' >
+            <ion-label style="font-size:small !important; color: rgb(163, 157, 157) !important; " >
+              Fecha : {{item.fecha}}
+            </ion-label>
+            <ion-label style="font-size:small !important; color: rgb(163, 157, 157) !important; " >
+              Estado : {{item.Estado}}
+            </ion-label>
+          </ion-col>
+          <ion-col size='1' >
+            <button class="btn rounded-circle" style='color: #3f51b5 !important;' >
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-earmark-medical-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M2 2a2 2 0 0 1 2-2h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm7.5 1.5v-2l3 3h-2a1 1 0 0 1-1-1zm-3 2a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L5 7l-.549.317a.5.5 0 1 0 .5.866l.549-.317V8.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L7 7l.549-.317a.5.5 0 1 0-.5-.866l-.549.317V5.5zm-2 4.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"/>
+              </svg>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+</ion-content>
