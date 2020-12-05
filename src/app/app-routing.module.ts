@@ -47,6 +47,10 @@ const routes: Routes = [
     path: 'agregar-transferencia',
     loadChildren: () => import('./agregar-transferencia/agregar-transferencia.module').then( m => m.AgregarTransferenciaPageModule)
   },
+  {
+    path: 'confirmar-alumno',
+    loadChildren: () => import('./confirmar-alumnno/confirmar-alumnno.module').then( m => m.ConfirmarAlumnnoPageModule)
+  },
 ];
 
 @NgModule({
